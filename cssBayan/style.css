@@ -80,6 +80,12 @@ input[type=radio]:checked + label .open-icons{
   animation: shows 0.5s;
 }
 
+input[type=radio]:hover + label .open-icons{
+  transform: rotate(45deg);
+  animation: shows 0.5s;
+}
+
+
 .meme__img-container {
   display: none;
   transition: 0.3s ease-out;
@@ -179,6 +185,7 @@ footer {
     cursor: default;
     display: none;
   }
+  
 
   /* Checked radio*/
   input[type=radio]:checked + label .meme__img-container{
